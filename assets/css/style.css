@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  color: #000;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #e3e3e3;
+}
+
+#myChart {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+}
+.main_amount_area {
+  background: #fff;
+  border-radius: 10px;
+  height: 356px;
+}
+.view_btn {
+  border: 1px solid #d3d2d2;
+}
+
+.main_con_amount {
+  background: #059bff;
+  border: 1px solid #555;
+  color: #fff;
+  height: 240px;
+  border-radius: 10px;
+}
+.main_con_amount.con_02 {
+  background: #ff4069;
+}
+.main_con_amount.con_02 .icon_area {
+  background: #cc2f51;
+}
+.main_con_amount.con_03 {
+  background: #ff9020;
+}
+.main_con_amount.con_03 .icon_area {
+  background: #d1761b;
+}
+.icon_area {
+  height: 60px;
+  width: 60px;
+  background: #0786db;
+  text-align: center;
+  line-height: 60px;
+  font-size: 20px;
+  border-radius: 50%;
+}
+.top_area_con h4 {
+  font-size: 24px;
+}
+.top_area_con h5 {
+  font-size: 18px;
+  padding: 5px 0 0;
+}
+.top_area_con span {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.investment_input_con {
+  border-radius: 10px;
+}
+
+.deposit_area,
+.withdraw_area {
+  border-radius: 10px;
+}
+
+/* Input Number Arrow Hidden */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+/* Input Number Arrow Hidden end */
+
+.withdraw_area button {
+  background: #ff4069;
+  border-color: #ff4069;
+}
+.deposit_area button {
+  background: #059bff;
+  border-color: #059bff;
+}

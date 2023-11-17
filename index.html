@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Investment App Prectice</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="chart_nd_main_amount_area mt-4">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="chart_area">
+              <div>
+                <canvas id="myChart"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="main_amount_area p-4">
+              <div
+                class="main_amount_head d-flex justify-content-between align-items-center"
+              >
+                <h3>My Portfolio</h3>
+                <a class="view_btn btn btn-light" href="#">VIEW ALL</a>
+              </div>
+
+              <div class="main_amount_con_main mt-4">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div
+                      class="main_con_amount p-3 d-flex flex-column justify-content-between"
+                    >
+                      <div class="top_area d-flex gap-3">
+                        <div class="icon_area">
+                          <i
+                            class="fa-solid text-light fa-money-bill-transfer"
+                          ></i>
+                        </div>
+                        <div class="top_area_con text-light">
+                          <h4>Bitcoin</h4>
+                          <h5>1.223 BTH</h5>
+                          <span class="text-light"> (Todays Rate)</span>
+                        </div>
+                      </div>
+                      <div class="bttom_area text-light">
+                        <h5>Your Investment</h5>
+                        <h3>
+                          $<span class="text-light deposit_total">0</span>/=
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div
+                      class="main_con_amount con_02 p-3 d-flex flex-column justify-content-between"
+                    >
+                      <div class="top_area d-flex gap-3">
+                        <div class="icon_area">
+                          <i
+                            class="fa-solid text-light fa-money-bill-transfer"
+                          ></i>
+                        </div>
+                        <div class="top_area_con text-light">
+                          <h4>Bitcoin</h4>
+                          <h5>1.223 BTH</h5>
+                          <span class="text-light"> (Todays Rate)</span>
+                        </div>
+                      </div>
+                      <div class="bttom_area text-light">
+                        <h5>Your Withdraw</h5>
+                        <h3>
+                          $<span class="text-light withdraw_total">0</span>/=
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div
+                      class="main_con_amount con_03 p-3 d-flex flex-column justify-content-between"
+                    >
+                      <div class="top_area d-flex gap-3">
+                        <div class="icon_area">
+                          <i
+                            class="fa-solid text-light fa-money-bill-transfer"
+                          ></i>
+                        </div>
+                        <div class="top_area_con text-light">
+                          <h4>Bitcoin</h4>
+                          <h5>1.223 BTH</h5>
+                          <span class="text-light"> (Todays Rate)</span>
+                        </div>
+                      </div>
+                      <div class="bttom_area text-light">
+                        <h5>Total Balance</h5>
+                        <h3>
+                          $<span class="text-light total_balance">0</span>/=
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="investment_input_con bg-white px-3 py-4">
+              <h3>Want Transaction? <i class="fa-solid fa-arrow-right"></i></h3>
+              <p class="pt-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                error quisquam tempore impedit ullam praesentium dolorum ea,
+                minima voluptas possimus?
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="deposit_area p-4 bg-white">
+              <h4 class="mb-3">Deposit Your Money Here</h4>
+              <input type="number" min="0" class="form-control deposit_input" />
+              <button
+                type="button"
+                class="btn btn-primary w-50 mt-3 deposit_btn"
+              >
+                Deposit
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="withdraw_area p-4 bg-white">
+              <h4 class="mb-3">Withdraw Your Money Here</h4>
+              <input
+                type="number"
+                min="0"
+                class="form-control withdraw_input"
+              />
+              <button
+                type="button"
+                class="btn btn-primary w-50 mt-3 withdraw_btn"
+              >
+                Withdraw
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/chart.js"></script>
+  </body>
+</html>
